@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<% var files = htmlWebpackPlugin.files %>
+<head>
+  <meta charset="UTF-8">
+  <title>react mobx boilerplate</title>
+  <link rel="shortcut icon " type="images/x-icon" href="/favicon.ico">
+  <% for (var i = 0, file; file = files.css[i++];) { %>
+  <link rel="stylesheet" href="<%= file %>">
+  <% } %>
+</head>
+<body>
+  <div id="app"></div>
+  <% for (var i = 0, file; file = files.js[i++];) { %>
+    <script src="<%= file %>"></script>
+  <% } %>
+</body>
+</html>

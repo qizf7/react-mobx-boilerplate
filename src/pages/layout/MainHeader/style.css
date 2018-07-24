@@ -1,0 +1,22 @@
+.main-header {
+  margin: 0 auto;
+  width: 360px;
+  height: 80px;
+  line-height: 80px;
+  & nav {
+    & .main-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    & a {
+      text-decoration: none;
+      color: #333;
+    }
+    & :global a.active {
+      color: crimson;
+    }
+  }
+}
